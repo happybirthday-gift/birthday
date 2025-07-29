@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #ffe6f0, #d1c4e9);
+      overflow-x: hidden;
+      animation: backgroundMove 20s infinite linear;
+    }
+
+    @keyframes backgroundMove {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 100% 50%; }
+    }
+
+    .container {
+      text-align: center;
+      padding: 60px 20px;
+      color: #5e35b1;
+    }
+
+    h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 3em;
+      margin-bottom: 10px;
+      animation: fadeInDown 1.5s ease;
+    }
+
+    h2 {
+      font-weight: 300;
+      font-size: 1.5em;
+      margin-bottom: 30px;
+      color: #6a1b9a;
+      animation: fadeIn 2.5s ease;
+    }
+
+    @keyframes fadeInDown {
+      from { transform: translateY(-50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      margin: 20px auto;
+      border-radius: 20px;
+      max-width: 600px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+      animation: popUp 1s ease-out;
+    }
+
+    @keyframes popUp {
+      from { transform: scale(0.9); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    .balloons {
+      position: absolute;
+      width: 100px;
+      top: -100px;
+      animation: float 6s infinite ease-in-out;
+    }
+
+    .balloon1 { left: 10%; animation-delay: 0s; }
+    .balloon2 { left: 30%; animation-delay: 2s; }
+    .balloon3 { left: 50%; animation-delay: 4s; }
+    .balloon4 { left: 70%; animation-delay: 1s; }
+
+    @keyframes float {
+      0% { top: 100%; opacity: 0; }
+      10% { opacity: 1; }
+      100% { top: -150px; opacity: 0; }
+    }
+
+    footer {
+      margin-top: 50px;
+      font-size: 0.9em;
+      color: #555;
+    }
+
+    button {
+      margin-top: 20px;
+      background: #7b1fa2;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    button:hover {
+      background: #9c27b0;
+    }
+  </style>
+</head>
+<body>
+
+  <img src="index.png" class="balloons balloon1" />
+  <img src="index.png" class="balloons balloon2" />
+  <img src="index.png" class="balloons balloon3" />
+  <img src="index.png" class="balloons balloon4" />
+
+  <div class="container">
+    <h1>🎂 Happy Birthday!</h1>
+    <h2>Wishing you a day filled with love, laughter, and cake!</h2>
+
+    <div class="card">
+      <p>Today is all about YOU! 🌟</p>
+      <p>May your heart be as light as balloons and your smile as bright as candles. 💖</p>
+      <p>Each moment today is a new memory, a new giggle, a new wish. 🥳</p>
+      <p>Keep shining, keep dreaming, and keep being the amazing person you are. 🌈</p>
+
+      <button onclick="alert('🎁 You received a virtual hug!')">🎁 Open Your Surprise!</button>
+    </div>
+
+    <footer>
+      Made with ❤️ for wish "Happy Birthday".
+        <p>made by animesh</p>
+    </footer>
+  </div>
+</body>
+</html>
